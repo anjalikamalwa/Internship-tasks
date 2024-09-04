@@ -2,7 +2,7 @@ import asyncHandler from "express-async-handler";
 import bcrypt from "bcrypt";
 import { Contact } from "../models/contactModel.js";
 // @desc  message
-// @route POST /api/users/register
+// @route POST /api/message
 // @access public
 export const sentMessage = asyncHandler(async (req, res) => {
   const { name, email, message } = req.body;
